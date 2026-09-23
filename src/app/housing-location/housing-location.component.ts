@@ -8,8 +8,8 @@ import { HousingLocation } from '../housing-location';
   template: `
     <section class="listing">
       <img class="listing-photo" [src]="HousingLocation.photo" alt="ex {{HousingLocation.photo}}">
-      <h2 class=""></h2>
-      <p class="listing-location"></p>
+      <h2 class="listing-heading">{{HousingLocation.name}}</h2>
+      <p class="listing-location">{{HousingLocation.city}}, {{HousingLocation.state}}</p>
     </section>
   `,
   styleUrls: ['./housing-location.component.css']
